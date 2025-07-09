@@ -1,0 +1,47 @@
+# Ignore all configuration folders and files
+config/
+**/config/
+*.properties
+*.yml
+*.yaml
+*.env
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore build output
+dist/
+build/
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore npm package lock file
+package-lock.json
+
+# Ignore yarn lock file
+yarn.lock
+
+# Ignore lock files for other package managers
+pnpm-lock.yaml
+shrinkwrap.yaml
