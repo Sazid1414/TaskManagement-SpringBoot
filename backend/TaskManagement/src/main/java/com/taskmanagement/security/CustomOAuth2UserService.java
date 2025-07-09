@@ -2,6 +2,7 @@ package com.taskmanagement.security;
 
 import com.taskmanagement.model.Role;
 import com.taskmanagement.model.User;
+import com.taskmanagement.model.AuthProvider;
 import com.taskmanagement.repository.RoleRepository;
 import com.taskmanagement.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

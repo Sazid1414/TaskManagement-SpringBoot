@@ -31,12 +31,6 @@ public class SecurityConfig {
     private JwtAuthenticationFilter authenticationFilter;
     
     @Autowired
-    private OAuth2AuthenticationSuccessHandler oAuth2AuthenticationSuccessHandler;
-    
-    @Autowired
-    private OAuth2AuthenticationFailureHandler oAuth2AuthenticationFailureHandler;
-    
-    @Autowired
     private CustomOAuth2UserService customOAuth2UserService;
 
     @Bean
@@ -87,8 +81,6 @@ public class SecurityConfig {
                 .userInfoEndpoint(userInfo -> userInfo
                     .userService(customOAuth2UserService)
                 )
-                .successHandler(oAuth2AuthenticationSuccessHandler)
-                .failureHandler(oAuth2AuthenticationFailureHandler)
             );
         
         http.addFilterBefore(authenticationFilter, UsernamePasswordAuthenticationFilter.class);
